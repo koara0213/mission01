@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <title>LANDHEART | 株式会社ランドハート</title>
+  <link rel="stylesheet" href="css/header.css" />
+  <link rel="stylesheet" href="css/footer.css" />
+  <link rel="stylesheet" href="css/top.css" />
+</head>
+<body>
+
+  <!-- ヘッダー -->
+  <header class="header">
+    <div class="header__inner">
+      <img src="images/logo.png" alt="LANDHEART" class="header__logo" />
+      <button class="header__menu-button" aria-label="メニューを開く">&#9776;</button>
+    </div>
+    <nav class="header__nav header__nav--closed">
+      <ul class="header__nav-list">
+        <li><a href="#">会社情報</a></li>
+        <li><a href="#">事業内容</a></li>
+        <li><a href="#">物件情報</a></li>
+        <li><a href="#">採用情報</a></li>
+        <li><a href="#">お問い合わせ</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- メインビジュアル -->
+  <section class="mainvisual">
+    <img src="images/mainvisual.jpg" alt="メインビジュアル" />
+    <div class="mainvisual__text">価値をカタチに、未来へつなぐ。</div>
+  </section>
+
+  <!-- コンテンツ（事業内容・情報など） -->
+  <main class="top">
+    <section class="business">
+      <h2>Business content <span>事業内容</span></h2>
+      <!-- 事業ブロックなど -->
+    </section>
+  </main>
+
+  <!-- フッター -->
+  <footer class="footer">
+    <div class="footer__info">
+      <p>© LANDHEART All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    // ハンバーガーメニュー制御
+    document.querySelector('.header__menu-button').addEventListener('click', function () {
+      document.querySelector('.header__nav').classList.toggle('header__nav--closed');
+    });
+  </script>
+
+</body>
+</html>
