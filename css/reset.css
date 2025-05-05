@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+body {
+  font-family: "Noto Sans JP";
+  line-height: 1.75;
+  color: #333;
+  margin: auto;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+li {
+  list-style: none;
+}
