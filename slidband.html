@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+  <head>
+    <meta charset="UTF-8" />
+    <title>LANDHEART | 株式会社ランドハート</title>
+    <link rel="stylesheet" href="css/slidband.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <div class="business">
+
+      <div class="slideband">
+        <div class="slideband__line">
+          <span class="slideband__line--gray"></span>
+          <span class="slideband__line--pink"></span>
+        </div>
+        <div class="slideband__inner"></div>
+      </div>
+
+      <div class="business__inner">
+        <div class="business__title">
+          <span class="business__title-line"></span>
+          <h2 class="business__title-main">Business content</h2>
+          <p class="business__title-sub">事業内容</p>
+        </div>
+
+        <!-- <div class="imgbox"> -->
+
+        <div class="imgrow">
+          <div class="imgbox imgbox--home">
+            <div class="imgbox__bg imgbox__bg--home"></div>
+            <div class="imgbox__overlay"></div>
+            <div class="imgbox__content">
+              <p class="imgbox__title">借りたい</p>
+              <img src="images/icon_home.png" alt="" class="imgbox__icon">
+              <p class="imgbox__caption">住居/お部屋探し<br>賃貸</p>
+            </div>
+          </div>
+
+          <div class="imgbox imgbox--store">
+            <div class="imgbox__bg imgbox__bg--store"></div>
+            <div class="imgbox__overlay"></div>
+            <div class="imgbox__content">
+              <p class="imgbox__title">借りたい</p>
+              <img src="images/icon_store.png" alt="" class="imgbox__icon">
+              <p class="imgbox__caption">店舗＆事務所<br>賃貸</p>
+            </div>
+          </div>
+
+          <div class="imgbox imgbox--estate">
+            <div class="imgbox__bg imgbox__bg--estate"></div>
+            <div class="imgbox__overlay"></div>
+            <div class="imgbox__content">
+              <p class="imgbox__title">売りたい<br>買いたい</p>
+              <img src="images/icon_estate.png" alt="" class="imgbox__icon">
+              <p class="imgbox__caption">不動産物件<br>売買</p>
+            </div>
+          </div>
+      </div>
+      <!-- </div> -->
+
+      <!-- 🔽 JavaScriptはここに書きます -->
+      <script>
+        const fadeElems = document.querySelectorAll('.fadein');
+
+        const observer = new IntersectionObserver(entries => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('show');
+              observer.unobserve(entry.target); // 一度だけ実行
+            }
+          });
+        }, {
+          threshold: 0.1 // 10%見えたらトリガー
+        });
+
+        fadeElems.forEach(el => {
+          observer.observe(el);
+        });
+      </script>
+
+      <!-- 共通JSファイルなどの読み込みもここでOK -->
+      <script src="../js/common.js"></script>
+  </body>
+
+</html>
