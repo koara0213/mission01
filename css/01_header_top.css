@@ -1,0 +1,131 @@
+/* メインビジュアルヘッダー */
+.mv-header {
+    width: 100%;
+    height: 160vh;
+    background: url('../images/bgTop.png') no-repeat center center / cover;
+    z-index: 1;
+    position: relative;
+  }
+  
+  /* ヘッダーロゴ */
+  .mv-header__wrapper {
+    max-width: 1080px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 3;
+    padding: 20px;
+  }
+  
+  .mv-header__logo img {
+    height: 40px;
+  }
+  
+  /* ハンバーガーボタン */
+  .mv-header__hamburger-button {
+    width: 63px;
+    height: 30px;
+    position: relative;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    z-index: 3;
+  }
+  
+  /* ハンバーガー 線 */
+  .mv-header__hamburger-line {
+    display: block;
+    width: 100%;
+    height: 8px;
+    background-color: #fff;
+    margin-bottom: 6px;
+  }
+  
+  /* ドロワーメニュー */
+  .mv-header__drawer {
+    display: none;
+    width: 100%;
+    justify-content: flex-end;
+    position: relative;
+    color: #000;
+    overflow-y: auto;
+    transition: right 0.4s ease;
+    z-index: 2;
+    box-sizing: border-box;
+    padding: unset;
+  }
+  
+  .mv-header__nav {
+    width: 360px;
+    background-color: #f1f1f1;
+    padding: 15px 0px 15px 0px;
+    list-style: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    margin:unset;
+  }
+  
+  .mv-header__nav-item {
+    margin-bottom: 10px;
+    color:#000;
+  }
+
+  .mv-header__nav-item a{
+    margin-bottom: 10px;
+    color:#000;
+  }
+
+  .mv-header__nav-label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    font-size: 20px;  
+    cursor: pointer;
+    padding: 0px 17px 10px 17px;
+  }
+  
+  /* ドロワーメニュー横の「＋／ー」ボタン */
+  .mv-header__nav-toggle {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+  }
+
+  /* ドロワーメニューのサブメニュー */
+  .mv-header__navsublabel{
+    display: flex;
+    place-content: space-between;
+    padding-right: 20px;
+  }
+
+  .mv-header__submenu {
+    background-color: #fff;
+    max-height: 0;
+    transition: max-height 0.3s ease;
+    padding-left: 1rem;
+    display: none;
+  }
+  
+  .mv-header__submenu--open {
+    max-height: 500px; /* メニューの高さに応じて調整 */
+  }
+  
+  /* メニュー表示切替 */
+  .drawer-open .mv-header__drawer {
+    right: 0;
+    display: flex;
+  }
+
+  /* サブメニュー内 メニュー表示・非表示 */
+  .mv-header__submenu.is-open {
+    display: block;
+    max-height: 500px; /* 十分に大きな高さを指定 */
+    font-size: 20px;
+  }
+
+  .mv-header__submenu.is-open li {
+    padding: 15px 8px 15px 19px;
+  }
