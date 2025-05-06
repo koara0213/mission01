@@ -1,22 +1,28 @@
 @charset "UTF-8";
+/* Global page styles
+------------------------------------------ */
 
 body {
-  font-family: "Noto Sans JP";
-  line-height: 1.75;
-  color: #333;
-  margin: auto;
-}
-
-a {
-  color: #fff;
-  text-decoration: none;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-li {
-  list-style: none;
-}
+    font-family: "Noto Sans JP";
+    line-height: 1;
+    color: #000;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  img {
+    width: 100%;
+    height: auto;
+    vertical-align: bottom;
+  }
+  
+  li {
+    list-style: none;
+  }
+  
