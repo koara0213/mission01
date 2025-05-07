@@ -1,0 +1,77 @@
+/* ServiceDev styles
+------------------------------------------ */
+.serviceDev{
+  position: relative;
+}
+
+.servicebandDevDev {
+  position: absolute;
+  width: 100%;
+  height: 480px;
+}
+
+.servicebandDev__inner {
+  background-color: #050829;
+  width: 57vw;
+  height: 470px;
+  position: absolute;
+  left: -57vw;
+  animation: slideIn 0.6s ease-out forwards;
+  z-index: 1;
+}
+
+@keyframes slideIn {
+  to {
+    left: 0;
+  }
+}
+
+.slidebandDev__line {
+  position: absolute;
+  top: 100px;
+  right: 0; /* ← 左寄せから右寄せに変更 */
+  display: flex;
+  justify-content: flex-end; /* ← 子要素を右から順に並べる */
+  height: 1px;
+  z-index: 2;
+}
+
+.slidebandDev__line--pink {
+  width: 43vw;
+  background-color: #E4007F;
+  height: 1px;
+}
+
+.slidebandDev__line--gray {
+  width: calc(100vw - 43vw);
+  background-color: #707070;
+  height: 1px;
+}
+
+.serviceDev__inner {
+  position: relative;
+  max-width: 1080px;
+  width:24vw;
+  margin: 0 auto;
+  z-index: 10;
+  padding: 3.3vw 0vw 0vw 30vw;
+}
+
+.servicebandDev__content {
+  color: #ffffff;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+.servicebandDev__title {
+  font-size: 28px;
+  font-weight: 700;
+  padding: 1.7vw 7vw 0.3vw 24.6vw;
+}
+
+.servicebandDev__text {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.9;
+  padding: 0.3vw 0vw 0.5vw 24.6vw;
+  margin: unset;
+}
