@@ -32,30 +32,24 @@ li {
 }
 
 .serviceband {
-  position: relative;
+  position: absolute;
   width: 100%;
-  height: auto;
-  overflow: hidden; /* はみ出し防止 */
-  background-color: #050829;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  height: 480px;
 }
 
 .serviceband__inner {
   background-color: #050829;
   width: 57vw;
   height: 470px;
-  transform: translateX(100%);
+  position: absolute;
+  right: -57vw;
   animation: slideIn 0.6s ease-out forwards;
-  /* margin-bottom: -470px; 帯の高さ分だけ逆マージンで重ねて流す */
-  /* animation: none; */
-  /* right:0; */
+  z-index: 1;
 }
 
 @keyframes slideIn {
   to {
-    transform: translateX(0);
+    right: 0;
   }
 }
 
@@ -91,30 +85,30 @@ li {
 }
 
 .serviceband__content {
-  position: absolute;
-  top: 50%;
-  left: 5vw;
-  transform: translateY(-50%);
-  z-index: 2;
+  /* padding: 50px 40px; */
   color: #ffffff;
-  width: 45vw;
   font-family: 'Noto Sans JP', sans-serif;
 }
 
 .serviceband__title {
   font-size: 28px;
   font-weight: 700;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
+  padding: 1.2vw 12.7vw 0.3vw 5.6vw;
 }
 
 .serviceband__subtitle {
   font-size: 18px;
   font-weight: 700;
-  margin-bottom: 10px;
+  /* margin-bottom: 10px; */
+  padding: 0vw 10vw 0vw 5.1vw;
+  margin: 0px 0px;
 }
 
 .serviceband__text {
   font-size: 18px;
   font-weight: 400;
   line-height: 1.9;
+  padding: 0.5vw 10vw 0.5vw 5.5vw;
+  margin: unset;
 }
