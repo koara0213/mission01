@@ -4,22 +4,31 @@
   <head>
     <meta charset="UTF-8" />
     <title>LANDHEART | 株式会社ランドハート</title>
-    <link rel="stylesheet" href="css/slidband.css" />
+    <link rel="stylesheet" href="css/slideband.css" />
+    <link rel="stylesheet" href="css/reset.css" /> 
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="js/slideband.js" defer></script>
+
   </head>
 
   <body>
 
+    <!-- 事業内容 -->
     <div class="business">
-
+      <!-- 帯 -->
       <div class="slideband">
         <div class="slideband__line">
           <span class="slideband__line--gray"></span>
           <span class="slideband__line--pink"></span>
         </div>
-        <div class="slideband__inner"></div>
+         <div class="slideband__inner">
+          <div class="serviceband__content">
+            <h2 class="serviceband__title">賃貸＆販売 事業</h2>
+          </div>  
+         </div>
       </div>
 
+      <!-- コンテンツタイトル -->
       <div class="business__inner">
         <div class="business__title">
           <span class="business__title-line"></span>
@@ -27,8 +36,7 @@
           <p class="business__title-sub">事業内容</p>
         </div>
 
-        <!-- <div class="imgbox"> -->
-
+        <!-- カラム3つ　-->
         <div class="imgrow">
           <div class="imgbox imgbox--home">
             <div class="imgbox__bg imgbox__bg--home"></div>
@@ -60,30 +68,7 @@
             </div>
           </div>
       </div>
-      <!-- </div> -->
-
-      <!-- 🔽 JavaScriptはここに書きます -->
-      <script>
-        const fadeElems = document.querySelectorAll('.fadein');
-
-        const observer = new IntersectionObserver(entries => {
-          entries.forEach(entry => {
-            if (entry.isIntersecting) {
-              entry.target.classList.add('show');
-              observer.unobserve(entry.target); // 一度だけ実行
-            }
-          });
-        }, {
-          threshold: 0.1 // 10%見えたらトリガー
-        });
-
-        fadeElems.forEach(el => {
-          observer.observe(el);
-        });
-      </script>
-
-      <!-- 共通JSファイルなどの読み込みもここでOK -->
-      <script src="../js/common.js"></script>
+    </div>
   </body>
 
 </html>
