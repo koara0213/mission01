@@ -165,21 +165,21 @@
   height: 216px;
   position: absolute;
   left: -37vw;
-  animation: slideIn 0.6s ease-out forwards;
+  animation: slideIn__slideband 0.6s ease-out forwards;
   z-index: 1;
 }
 
-@keyframes slideIn {
+@keyframes slideIn__slideband {
   to {
     left: 0;
   }
 }
 
-.slideband__inner .serviceband__content{
+.slideband__inner .slideband__content{
   color: #fff;
 }
 
-.serviceband__title{
+.slideband__title{
   padding: 2.1vw 1vw 1vw 23.1vw;
   font-size: 25px;
   letter-spacing: 1.5px;

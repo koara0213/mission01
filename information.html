@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <title>LANDHEART | 株式会社ランドハート</title>
+  <link rel="stylesheet" href="css/header.css" />
+  <link rel="stylesheet" href="css/footer.css" />
+  <link rel="stylesheet" href="css/top.css" />
+</head>
+<body>
+
+  <div class="information">
+    <div class="information__inner">
+
+      <div class="information__heading">
+        <span class="information__heading-line"></span>
+        <h2 class="information__heading-title">Information</h2>
+        <p class="information__heading-sub">会社情報</p>
+      </div>
+
+      <div class="information__content">
+        <div class="information__image">
+          <img src="images/LH_building.png" alt="">
+        </div>
+        <div class="information__text">
+          <p class="information__text-paragraph">
+            誠に勝手ながら、下記の期間を夏季休業とさせていただきます。
+          </p>
+          <p class="information__text-paragraph">
+            <span class="information__location">本店　2021年08月11日(水)〜2021年08月18日(水)</span><br>
+            <span class="information__location">千葉店　2021年08月13日(金)〜2021年08月15日(日)</span><br>
+            <span class="information__location">管理部　2021年08月13日(金)〜2021年08月15日(日)</span>
+          </p>
+          <p class="information__text-paragraph">
+            何卒ご了承いただきますよう、お願い申し上げます。
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+<!-- 🔽 JavaScriptはここに書きます -->
+<script>
+  const hamburger = document.querySelector('.hamburger');
+  const body = document.body;
+
+  hamburger.addEventListener('click', () => {
+    body.classList.toggle('drawer-open');
+  });
+</script>
+
+<!-- 共通JSファイルなどの読み込みもここでOK -->
+<script src="../js/common.js"></script>
+</body>
+</html>
