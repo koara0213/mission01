@@ -1,5 +1,5 @@
 // 帯のスライドイン //
-const fadeElems = document.querySelectorAll('.fadein');
+const fadeElems = document.querySelectorAll('.fadeinLefttoRight');
 
 const observer = new IntersectionObserver(entries => {
   entries.forEach(entry => {
