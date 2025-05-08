@@ -3,175 +3,344 @@
 <head>
   <meta charset="UTF-8" />
   <title>LANDHEART | 株式会社ランドハート</title>
+
+  <!-- 納品時削除 -->
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/01_header_top.css" />
+  <link rel="stylesheet" href="css/slideband.css" />
+  <link rel="stylesheet" href="css/service.css" />
+  
+  <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js" defer></script> -->
+  <script src="js/01_header_top.js" defer></script>
+  <script src="js/slideband.js" defer></script>
+  <script src="js/common.js" defer></script>
+  <!-- -->
+
   <link rel="stylesheet" href="css/header.css" />
   <link rel="stylesheet" href="css/footer.css" />
   <link rel="stylesheet" href="css/top.css" />
 </head>
 <body>
-
-  <!-- ヘッダー -->
-  <header class="header">
-    <div class="header__inner">
-      <img src="images/logo.png" alt="LANDHEART" class="header__logo" />
-      <button class="header__menu-button" aria-label="メニューを開く">&#9776;</button>
+  <!-- ヘッダー メインビジュアル -->
+  <header class="mv-header">
+    <div class="mv-header__wrapper">
+      <!-- ヘッダーロゴ -->
+      <div class="mv-header__logo">
+        <a href="/">
+          <img src="images/logo.png" alt="">
+        </a>
+      </div>
+      <!-- ハンバーガーボタン -->
+      <div class="mv-header__hamburger">
+        <button class="mv-header__hamburger-button" aria-label="メニューを開く">
+          <span class="mv-header__hamburger-line"></span>
+          <span class="mv-header__hamburger-line"></span>
+          <span class="mv-header__hamburger-line"></span>
+        </button>
+      </div>
     </div>
-    <nav class="header__nav header__nav--closed">
-      <ul class="header__nav-list">
-        <li><a href="#">会社情報</a></li>
-        <li><a href="#">事業内容</a></li>
-        <li><a href="#">物件情報</a></li>
-        <li><a href="#">採用情報</a></li>
-        <li><a href="#">お問い合わせ</a></li>
+    
+    <!-- ドロワーメニュー -->
+    <nav class="mv-header__drawer mv-header__wrapper">
+      <ul class="mv-header__nav">
+        <li class="mv-header__nav-item item1">
+          <div class="mv-header__nav-label">
+            企業情報
+            <button class="mv-header__nav-toggle" aria-expanded="false">＋</button>
+          </div>
+          <ul class="mv-header__submenu">
+            <div class="mv-header__navsublabel">
+              <li><a href="#">会社概要</a></li>
+              <button class="mv-header__nav-toggle" aria-expanded="false">＞</button>
+            </div>
+            <div class="mv-header__navsublabel">
+              <li><a href="#">ランドハートの想い</a></li>
+              <button class="mv-header__nav-toggle" aria-expanded="false">＞</button>
+            </div>
+          </ul>
+        </li>
+    
+        <li class="mv-header__nav-item item2">
+          <div class="mv-header__nav-label">
+            Business content（事業内容）
+            <button class="mv-header__nav-toggle" aria-expanded="false">＋</button>
+          </div>
+          <ul class="mv-header__submenu">
+            <div class="mv-header__navsublabel">
+              <li><a href="#">賃貸</a></li>
+              <button class="mv-header__nav-toggle" aria-expanded="false">＞</button>
+            </div>
+            <div class="mv-header__navsublabel">
+              <li><a href="#">売買</a></li>
+              <button class="mv-header__nav-toggle" aria-expanded="false">＞</button>
+            </div>
+          </ul>
+        </li>
+        <li class="mv-header__nav-item item3">
+          <div class="mv-header__nav-label">
+            EXTRA
+            <button class="mv-header__nav-toggle" aria-expanded="false">＋</button>
+          </div>
+          <ul class="mv-header__submenu">
+            <div class="mv-header__navsublabel">
+              <li><a href="#">sample1</a></li>
+              <button class="mv-header__nav-toggle" aria-expanded="false">＞</button>
+            </div>
+            <div class="mv-header__navsublabel">
+              <li><a href="#">sample2</a></li>
+              <button class="mv-header__nav-toggle" aria-expanded="false">＞</button>
+            </div>
+          </ul>
+        </li>
+        <li class="mv-header__nav-item item4">
+          <div class="mv-header__nav-label">
+            仲介会社様　専用サイト
+            <button class="mv-header__nav-toggle" aria-expanded="false">＋</button>
+          </div>
+          <ul class="mv-header__submenu">
+            <div class="mv-header__navsublabel">
+              <li><a href="#">sample1</a></li>
+              <button class="mv-header__nav-toggle" aria-expanded="false">＞</button>
+            </div>
+            <div class="mv-header__navsublabel">
+              <li><a href="#">sample2</a></li>
+              <button class="mv-header__nav-toggle" aria-expanded="false">＞</button>
+            </div>
+          </ul>
+        </li>
+        <li class="mv-header__nav-item item5">
+          <div class="mv-header__nav-label">
+            くらさばコネクト
+            <button class="mv-header__nav-toggle" aria-expanded="false">＋</button>
+          </div>
+          <ul class="mv-header__submenu">
+            <div class="mv-header__navsublabel">
+              <li><a href="#">sample1</a></li>
+              <button class="mv-header__nav-toggle" aria-expanded="false">＞</button>
+            </div>
+            <div class="mv-header__navsublabel">
+              <li><a href="#">sample2</a></li>
+              <button class="mv-header__nav-toggle" aria-expanded="false">＞</button>
+            </div>
+          </ul>
+        </li>
+        <li class="mv-header__nav-item item6">
+          <a href="#">お問い合わせ</a>
+        </li>
       </ul>
     </nav>
   </header>
-
-  <!-- メインビジュアル -->
-  <section class="mainvisual">
-    <img src="images/mainvisual.jpg" alt="メインビジュアル" />
-    <div class="mainvisual__text">価値をカタチに、未来へつなぐ。</div>
-  </section>
-
-  <!-- コンテンツ（事業内容・情報など） -->
-  <main class="top">
-    <section class="business">
-      <h2>Business content <span>事業内容</span></h2>
-      <!-- 事業ブロックなど -->
-    </section>
-  </main>
-
-<!-- フッター -->
-<footer class="footer">
-  <div class="footer__inner">
-    
-    <!-- インスタ & チャンネル ボタン -->
-    <div class="footer__sns-buttons">
-      <a href="#" class="sns-button sns-button--pink">
-        <img src="images/icon_insta.png" alt="Instagramアイコン" />
-        <span>staffのインスタ</span>
-      </a>
-      <a href="#" class="sns-button sns-button--white">
-        <img src="images/icon_channel.png" alt="チャンネルアイコン" />
-        <span>LANDHEARTちゃんねる</span>
-      </a>
-    </div>
-
-    <!-- 店舗情報 -->
-    <div class="footer__shops">
-      <div class="footer__shop__infoLeft">
-        <div class="footer__shop">
-          <div class="footer__title">
-            <span>【本店】</span>
-          </div>
-          <div class="footer__address">
-            〒260-0015<br>
-            千葉県千葉市中央区富士見2-14-6　LHビル千葉中央7F<br>
-            TEL：043-223-1234
-          </div>
+  
+    <!-- 事業内容 -->
+    <div class="business">
+      <!-- 帯 -->
+      <div class="slideband">
+        <div class="slideband__line">
+          <span class="slideband__line--gray"></span>
+          <span class="slideband__line--pink"></span>
         </div>
-        <div class="footer__shop">
-          <div class="footer__title">
-            <span>【千葉店】</span>
-          </div>
-          <div class="footer__address">
-            〒260-0015<br>
-            千葉県千葉市中央区富士見2-7-13　ランドハートビル1F<br>
-            TEL：043-227-3126
-          </div>
+         <div class="slideband__inner">
+          <div class="slideband__content">
+            <h2 class="slideband__title">賃貸＆販売 事業</h2>
+          </div>  
+         </div>
+      </div>
+
+      <!-- コンテンツタイトル -->
+      <div class="business__inner">
+        <div class="business__title">
+          <span class="business__title-line"></span>
+          <h2 class="business__title-main">Business content</h2>
+          <p class="business__title-sub">事業内容</p>
         </div>
 
-        <div class="footer__shop">
-          <div class="footer__title">
-            <span>【管理部】</span>
+        <!-- カラム3つ　-->
+        <div class="imgrow">
+          <div class="imgbox imgbox--home">
+            <div class="imgbox__bg imgbox__bg--home"></div>
+            <div class="imgbox__overlay"></div>
+            <div class="imgbox__content">
+              <p class="imgbox__title">借りたい</p>
+              <img src="images/icon_home.png" alt="" class="imgbox__icon">
+              <p class="imgbox__caption">住居/お部屋探し<br>賃貸</p>
+            </div>
           </div>
-          <div class="footer__address">
-            〒260-0015<br>
-            千葉県千葉市中央区富士見2-7-13　ランドハートビル4F<br>
-            TEL：043-223-6010
+
+          <div class="imgbox imgbox--store">
+            <div class="imgbox__bg imgbox__bg--store"></div>
+            <div class="imgbox__overlay"></div>
+            <div class="imgbox__content">
+              <p class="imgbox__title">借りたい</p>
+              <img src="images/icon_store.png" alt="" class="imgbox__icon">
+              <p class="imgbox__caption">店舗＆事務所<br>賃貸</p>
+            </div>
           </div>
-        </div>
-      </div>
-      <div class="footer__shop__infoRight">
-        <div class="footer__hours">
-        <p>営業時間　10:00〜18:00<br>
-          （日・祝日）10:00〜17:00</p>
-        <p>定休日　水曜日<br>
-          G.W. お盆 年末年始</p>
-        </div>
+
+          <div class="imgbox imgbox--estate">
+            <div class="imgbox__bg imgbox__bg--estate"></div>
+            <div class="imgbox__overlay"></div>
+            <div class="imgbox__content">
+              <p class="imgbox__title">売りたい<br>買いたい</p>
+              <img src="images/icon_estate.png" alt="" class="imgbox__icon">
+              <p class="imgbox__caption">不動産物件<br>売買</p>
+            </div>
+          </div>
       </div>
     </div>
-
-    <!-- ナビゲーションリンク -->
-    <div class="footer__nav">
-      <div class="footer__nav-column">
-        <p class="footer__nav-title">◆ 賃貸＆売買事業</p>
-        <ul>
-          <li><a href="#">賃貸住居（お部屋探し）</a></li>
-          <li><a href="#">賃貸 店舗＆事務所</a></li>
-          <li><a href="#">売買 不動産物件</a></li>
-        </ul>
-      </div>
-      <div class="footer__nav-column">
-        <p class="footer__nav-title">◆ サービス事業</p>
-        <ul>
-          <li><a href="#">賃貸管理について</a></li>
-          <li><a href="#">賃貸管理システム</a></li>
-          <li><a href="#">空き家管理サービス</a></li>
-          <li><a href="#">リノベーション</a></li>
-        </ul>
-      </div>
-      <div class="footer__nav-column">
-        <p class="footer__nav-title">◆ 開発事業</p>
-        <ul>
-          <li><a href="#">AQUEシリーズ</a></li>
-          <li><a href="#">AQUEシリーズ2</a></li>
-          <li><a href="#">貸したい、売りたい</a></li>
-        </ul>
-      </div>
-      <div class="footer__nav-column">
-        <p class="footer__nav-title">◆ EXTRA</p>
-        <ul>
-          <li><a href="#">物件カタログ</a></li>
-          <li><a href="#">周辺施設</a></li>
-          <li><a href="#">仲介会社様専用サイト</a></li>
-          <li><a href="#">くらさぽコネクト</a></li>
-        </ul>
-      </div>
-    </div>
-
-    <!-- 会社情報／お問い合わせ -->
-    <div class="footer__bottom-links">
-      <div class="footer__nav-column">
-        <p class="footer__nav-title">◆ 企業情報</p>
-        <ul>
-          <li><a href="#">会社概要</a></li>
-          <li><a href="#">ランドハートの想い</a></li>
-        </ul>
-      </div>
-      <div class="footer__nav-column">
-        <p class="footer__nav-title">◆ お問い合わせ</p>
-        <ul>
-          <li><a href="#">お問い合わせ</a></li>
-          <li><a href="#">プライバシーポリシー</a></li>
-          <li><a href="#">利用規約</a></li>
-        </ul>
-      </div>
-    </div>
-
-    <!-- コピーライト -->
-    <p class="footer__copyright">
-      Copyright(c) landheart All Rights Reserved.
-    </p>
   </div>
-</footer>
 
+    <!-- サービス事業 -->
+    <div class="service">
+      <div class="serviceband">
+        <div class="serviceband__line">
+          <span class="serviceband__line--pink"></span>
+          <span class="serviceband__line--gray"></span>
+        </div>
+        <!-- スライドする帯 -->
+        <div class="serviceband__inner">
 
-  <script>
-    // ハンバーガーメニュー制御
-    document.querySelector('.header__menu-button').addEventListener('click', function () {
-      document.querySelector('.header__nav').classList.toggle('header__nav--closed');
-    });
-  </script>
+        <!-- 通常フローで表示されるテキスト -->
+        <div class="serviceband__content">
+          <h2 class="serviceband__title">サービス事業</h2>
+          <h3 class="serviceband__subtitle">【管理サービス】</h3>
+          <p class="serviceband__text">
+            ランドハートは、地域に密着したネットワークを活かし、<br>
+            賃貸に関わる煩雑な業務を入居者募集から管理運営に至るまで<br>
+            オーナー様に代わってお引き受け致します。<br>
+            様々な管理プランで、安心の賃貸経営をトータルにサポート致します。
+          </p>
+        </div>
+      </div>
+      </div>
+      <div class="service__inner">
+        <img src="images/tools.png">
+      </div>
+    </div>
+
+  <!-- フッター -->
+  <footer class="footer">
+    <div class="footer__inner">
+      
+      <!-- インスタ & チャンネル ボタン -->
+      <div class="footer__sns-buttons">
+        <a href="#" class="sns-button sns-button--pink">
+          <img src="images/icon_insta.png" alt="Instagramアイコン" />
+          <span>staffのインスタ</span>
+        </a>
+        <a href="#" class="sns-button sns-button--white">
+          <img src="images/icon_channel.png" alt="チャンネルアイコン" />
+          <span>LANDHEARTちゃんねる</span>
+        </a>
+      </div>
+
+      <!-- 店舗情報 -->
+      <div class="footer__shops">
+        <div class="footer__shop__infoLeft">
+          <div class="footer__shop">
+            <div class="footer__title">
+              <span>【本店】</span>
+            </div>
+            <div class="footer__address">
+              〒260-0015<br>
+              千葉県千葉市中央区富士見2-14-6　LHビル千葉中央7F<br>
+              TEL：043-223-1234
+            </div>
+          </div>
+          <div class="footer__shop">
+            <div class="footer__title">
+              <span>【千葉店】</span>
+            </div>
+            <div class="footer__address">
+              〒260-0015<br>
+              千葉県千葉市中央区富士見2-7-13　ランドハートビル1F<br>
+              TEL：043-227-3126
+            </div>
+          </div>
+
+          <div class="footer__shop">
+            <div class="footer__title">
+              <span>【管理部】</span>
+            </div>
+            <div class="footer__address">
+              〒260-0015<br>
+              千葉県千葉市中央区富士見2-7-13　ランドハートビル4F<br>
+              TEL：043-223-6010
+            </div>
+          </div>
+        </div>
+        <div class="footer__shop__infoRight">
+          <div class="footer__hours">
+          <p>営業時間　10:00〜18:00<br>
+            （日・祝日）10:00〜17:00</p>
+          <p>定休日　水曜日<br>
+            G.W. お盆 年末年始</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- ナビゲーションリンク -->
+      <div class="footer__nav">
+        <div class="footer__nav-column">
+          <p class="footer__nav-title">◆ 賃貸＆売買事業</p>
+          <ul>
+            <li><a href="#">賃貸住居（お部屋探し）</a></li>
+            <li><a href="#">賃貸 店舗＆事務所</a></li>
+            <li><a href="#">売買 不動産物件</a></li>
+          </ul>
+        </div>
+        <div class="footer__nav-column">
+          <p class="footer__nav-title">◆ サービス事業</p>
+          <ul>
+            <li><a href="#">賃貸管理について</a></li>
+            <li><a href="#">賃貸管理システム</a></li>
+            <li><a href="#">空き家管理サービス</a></li>
+            <li><a href="#">リノベーション</a></li>
+          </ul>
+        </div>
+        <div class="footer__nav-column">
+          <p class="footer__nav-title">◆ 開発事業</p>
+          <ul>
+            <li><a href="#">AQUEシリーズ</a></li>
+            <li><a href="#">AQUEシリーズ2</a></li>
+            <li><a href="#">貸したい、売りたい</a></li>
+          </ul>
+        </div>
+        <div class="footer__nav-column">
+          <p class="footer__nav-title">◆ EXTRA</p>
+          <ul>
+            <li><a href="#">物件カタログ</a></li>
+            <li><a href="#">周辺施設</a></li>
+            <li><a href="#">仲介会社様専用サイト</a></li>
+            <li><a href="#">くらさぽコネクト</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- 会社情報／お問い合わせ -->
+      <div class="footer__bottom-links">
+        <div class="footer__nav-column">
+          <p class="footer__nav-title">◆ 企業情報</p>
+          <ul>
+            <li><a href="#">会社概要</a></li>
+            <li><a href="#">ランドハートの想い</a></li>
+          </ul>
+        </div>
+        <div class="footer__nav-column">
+          <p class="footer__nav-title">◆ お問い合わせ</p>
+          <ul>
+            <li><a href="#">お問い合わせ</a></li>
+            <li><a href="#">プライバシーポリシー</a></li>
+            <li><a href="#">利用規約</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- コピーライト -->
+      <p class="footer__copyright">
+        Copyright(c) landheart All Rights Reserved.
+      </p>
+    </div>
+  </footer>
 
 </body>
 </html>
