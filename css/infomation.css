@@ -1,0 +1,84 @@
+/* Information styles
+------------------------------------------ */
+
+.information {
+    background-color: #fff;
+    padding: 60px 20px;
+  }
+  
+  .information__inner {
+    max-width: 1080px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .information__heading {
+    display: flex;
+    align-items: center;
+    margin: 0.7vw 1vw 1vw 0.1vw;
+    gap: 20px;
+  }
+  
+  .information__heading-line {
+    width: 20px;
+    height: 2px;
+    background-color: #E4007F;
+    flex-shrink: 0;
+    margin-top: 10px;
+  }
+  
+  .information__heading-title {
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 46px;
+    font-weight: 700;
+    color: #003477;
+    margin: 0;
+  }
+  
+  .information__heading-sub {
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 26px;
+    font-weight: 500;
+    color: #003477;
+    margin: 1vw 1vw 0.1vw 0vw;
+  }
+  
+  .information__content {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+  
+  .information__image{
+    width: 35%;
+  }
+
+  .information__image img {
+    width: 83%;
+    height: auto;
+    display: block;
+    margin: 1vw 0vw 0vw 2.5vw;
+  }
+  
+  .information__text {
+    flex: 1;
+    min-width: 300px;
+    margin: 6.2vw 1vw 0vw 1.9vw; 
+}
+  
+  .information__text-paragraph {
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+    line-height: 1.7;
+    margin: 0.8vw 1vw 0vw 0vw;
+  }
+  
+  .information__location {
+    color: #FF0000;
+  }
+  
+  
