@@ -159,7 +159,7 @@
   top: 100px;
 }
 
-.slideband__inner {
+/* .slideband__inner {
   background-color: #050829;
   width: 37vw;
   height: 216px;
@@ -167,13 +167,42 @@
   left: -37vw;
   animation: slideIn__slideband 0.6s ease-out forwards;
   z-index: 1;
-}
+  transition: transform 0.6s ease, filter 0.6s ease;
+} */
 
-@keyframes slideIn__slideband {
+/* @keyframes slideIn__slideband {
   to {
     left: 0;
   }
+} */
+
+/* 最初は非表示状態 */
+.slideband__inner {
+  background-color: #050829;
+  width: 37vw;
+  height: 216px;
+  position: absolute;
+  /* left: -37vw; */
+  z-index: 1;
+  /* transition: left 0.6s ease, transform 0.6s ease; */
 }
+
+/* スクロールで見えたときに発動する */
+.slideband__inner.show {
+  left: 0;
+}
+
+.fadeinLefttoRight {
+  opacity: 0;
+  transform: translateX(-100px); /* 左から右へスライドイン */
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.fadeinLefttoRight.show {
+  opacity: 1;
+  transform: translateX(0);
+}
+
 
 .slideband__inner .slideband__content{
   color: #fff;
