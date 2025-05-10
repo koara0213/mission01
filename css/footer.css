@@ -8,43 +8,74 @@
   font-size: 0.9vw;
   width: 100vw;
   box-sizing: border-box;
+  margin-top: 2.1vw;
 }
 
 .footer__sns-buttons {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 30px;
   margin-bottom: 65px;
-  padding: 3px 206px;
-  gap: 31px;
 }
 
 .sns-button {
   flex: 1;
-  /* margin: 2vw 3vw; */
-  background-color: #f0f0f0;
-  border: none;
-  cursor: pointer;
-  transition: background-color 0.3s;
-  text-align: center;
-  box-sizing: border-box;
-  padding: 17px 0px;
+  max-width: 340px;
 }
 
-.sns-button img {
-  height: 27px;
-  width: 28px;
+.footer__sns-button__insta span{
+  padding: 0vw 1.2vw 0vw 0.1vw;
+  font-size: 19px;
 }
 
-.footer__sns-button__insta {
+.footer__sns-button__white span{
+  padding: 0vw 0.6vw 0vw 0.6vw;
+  font-size: 18px;
+}
+
+.sns-button a {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 18px 0px 18px 0px;
+  font-weight: bold;
+  font-size: 14px;
+  text-decoration: none;
+  /* gap: 10px; */
+  position: relative;
+  border-radius: 0; /* ✅ 角丸なし */
+}
+
+.footer__sns-button__insta a::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 1px;
+  margin-left: 10px;
+  background-color: currentColor; /* ✅ テキストと同じ色で自動切替 */
+}
+
+.footer__sns-button__white a::after {
+  content: "";
+  display: block;
+  width: 39px;
+  height: 1px;
+  background-color: currentColor; /* ✅ テキストと同じ色で自動切替 */
+}
+
+.footer__sns-buttons img{
+  width: 9%;
+}
+
+.sns-button--pink {
   background-color: #e91e63;
   color: #fff;
-  /* padding:26px 106px; */
 }
 
 .sns-button--white {
   background-color: #fff;
   color: #000;
-  /* padding: 10px 100px; */
+  border: 1px solid #ccc;
 }
 
 /*----*/
@@ -69,14 +100,13 @@
     box-sizing: border-box;
     padding: 22px 0px;
 }
-/*----*/
 
 /* 内部コンテンツ top */
 /* snsボタン */
 .footer__inner__top {
   max-width: 72vw;
   margin: 0vw 22vw;
-  padding:12vw 0vw 0vw 0vw;
+  padding:12.1vw 0vw 0vw 0vw;
   flex-direction: column;
   gap: 3vw;
 }
@@ -86,8 +116,13 @@
   width: 100%;
   flex-direction: column;
   gap: 3vw;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.85) 100%);
-  padding: 40px 0;
+  background: linear-gradient(
+    to bottom,
+      rgba(0, 0, 0, 0.3) 10%, 
+      rgba(0, 0, 0, 0.3) 25%, 
+      rgba(0, 0, 0, 0.95) 70%
+    );
+  padding: 0px 0;
   box-sizing: border-box;
 }
 
@@ -98,12 +133,22 @@
   flex-wrap: wrap;
   gap: 2vw;
   justify-content: space-between;
-  padding: 1.8vw 0vw 0.2vw 0.4vw;
+  padding: 0.4vw 0vw 0.2vw 0.4vw;
   margin: 0vw 22vw;
+}
+
+.footer__shop__infoLeft{
+  padding: 1.3vw 0vw;
 }
 
 .footer__title{
   width: 5.8vw;
+}
+
+.footer__address{
+  margin: unset;
+  padding: unset;
+  padding-bottom: 0.2vw;
 }
 
 .footer__shop,
@@ -111,76 +156,154 @@
   display: flex;
   flex: 1 1 22vw;
   min-width: 20vw;
-  line-height: 1.6;
+  line-height: 1.5;
   font-size: 0.9vw;
-  padding-bottom: 0.9vw;
+  padding-bottom: 1vw;
 }
 
-/* 店舗情報ブロック 営業時間・定休日 */
-.footer__shop__infoRight,
-.footer__hours{
+/* 営業時間・定休日ブロック */
+.footer__shop__infoRight{
   display: grid;
   flex: 1 1 22vw;
+  place-self: start;
   min-width: 20vw;
   line-height: 1.6;
   font-size: 0.9vw;
   padding-bottom: 0.9vw;
 }
 
-/* ナビゲーション */
-.footer__nav {
+.footer__hours--top{
   display: flex;
-  flex-wrap: wrap;
-  gap: 3vw;
-  border-top: 1px solid rgba(255,255,255,0.3);
-  padding-top: 2vw;
+  min-width: 20vw;
+  line-height: 1.6;
+  font-size: 0.9vw;
+  padding-left: 5.9vw;
+}
+
+.footer__shop__title{
+  margin: 1.2vw 0vw 0vw 0vw;
+  padding: unset;
+}
+
+.footer__shop__times{
+  margin: 1.2vw 0vw 0vw 0vw;
+  padding: unset;
+  letter-spacing: 1.5px;
+}
+
+.footer__hours--bottom{
+  display: flex;
+  min-width: 20vw;
+  line-height: 1.6;
+  font-size: 0.9vw;
+  padding-left: 5.9vw;
+  padding-top: 1vw;
+}
+
+.footer__hours--top .footer__shop__title{
+  padding-right: 1.2vw;
+}
+
+.footer__hours--bottom .footer__shop__title{
+  padding-right: 2.7vw;
+}
+
+/* ナビゲーション */
+.footer__nav-table {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4vw;
   margin: 0vw 22vw;
-}
-
-.footer__nav-column {
-  /* flex: 1 1 16vw; */
-  /* min-width: 14vw; */
-}
-
-.footer__nav-title {
-  font-size: 1vw;
-  font-weight: bold;
-  margin-bottom: 0.8vw;
-}
-
-.footer__nav-column ul {
-  list-style: none;
-  padding-left: 0;
-  margin: 0;
-}
-
-.footer__nav-column li {
-  margin-bottom: 0.6vw;
-}
-
-.footer__nav-column a {
-  color: #fff;
-  text-decoration: none;
   font-size: 0.95vw;
 }
 
-.footer__nav-column a:hover {
+.footer__nav-cell-icon {
+  width: 1.5vw;
+  min-width: 1.5vw;
+  color: #fff;
+  text-align: right;
+  font-weight: bold;
+}
+
+.footer__nav-cell-title {
+  font-weight: bold;
+  margin-bottom: 0.4vw;
+}
+
+.footer__nav-cell a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer__nav-cell a:hover {
   text-decoration: underline;
 }
 
-/* 最下部の2カラム（企業情報・お問い合わせ） */
-.footer__bottom-links {
+.footer__nav-grid {
   display: flex;
   flex-wrap: wrap;
-  gap: 5vw;
-  margin-top: 2vw;
-  margin: 0vw 22vw;
+  /* gap: 3vw; */
+  margin: 1.5vw 23.2vw 1.9vw 22.4vw;
+}
+
+.footer__nav-block {
+  flex: 1 1 13.5vw;
+  /* min-width: 16vw; */
+}
+
+.footer__nav-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.8vw;
+  margin-bottom: 0.9vw;
+}
+
+.footer__nav-cell-icon {
+  width: 1.5vw;
+  min-width: 1.5vw;
+  color: #fff;
+  font-weight: bold;
+  text-align: right;
+}
+
+.arrow {
+  font-size: 15px;
+}
+
+.down {
+  margin-top: 1.6vw;
+  margin-bottom: 0.3vw;
+}
+
+.footer__nav-cell-title {
+  font-weight: bold;
+  color: #fff;
+}
+
+.footer__nav-cell a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer__nav-cell a:hover {
+  text-decoration: underline;
+}
+
+.footer__nav-grid.bottom{
+  display: flex;
+  justify-content: flex-start;
+  flex: unset;
+}
+
+.footer__nav-grid.bottom .footer__nav-block{
+  flex: unset;
+  margin-right: 3.7vw;
 }
 
 /* コピーライト */
 .footer__copyright {
   text-align: center;
-  font-size: 0.8vw;
-  color: rgba(255,255,255,0.6);
-  margin-top: 2vw;
+  font-size: 0.7vw;
+  margin-top: 2.2vw;
+  margin-bottom: 0vw;
 }
