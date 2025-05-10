@@ -4,7 +4,7 @@
 
 body {
     font-family: "Noto Sans JP";
-    line-height: 1;
+    line-height: 1.5;
     color: #000;
     align-items: center;
     margin: 0;
@@ -170,12 +170,13 @@ body {
   padding: 0px 17px 10px 17px;
 }
 
-/* ドロワーメニュー横の「＋／ー」ボタン */
+ドロワーメニュー横の「＋／ー」ボタン
 .mv-header__nav-toggle {
   background: none;
   border: none;
-  font-size: 20px;
+  padding: 0;
   cursor: pointer;
+  outline: none;
 }
 
 /* ドロワーメニューのサブメニュー */
@@ -212,4 +213,45 @@ body {
 
 .mv-header__submenu.is-open li {
   padding: 15px 8px 15px 19px;
+}
+
+/* 疑似要素置き場 */
+/* 共通 */
+.icon::before {
+  font-family: "bootstrap-icons";
+  font-style: normal;
+  font-weight: normal;
+  display: inline-block;
+  font-size: 1rem;
+  vertical-align: middle;
+  color: #000;
+}
+
+/* ＋ プラス（bi-plus） */
+.icon-plus::before {
+  content: "\f4fe";
+}
+
+/* ー マイナス（bi-dash） */
+.icon-minus::before {
+  content: "\f2d7";
+}
+
+/* ＞ 右矢印（bi-chevron-right） */
+.icon-chevron-right::before {
+  content: "\f285";
+}
+
+/* ボタンのリセット */
+.mv-header__nav-toggle {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  outline: none;
+}
+
+.icon.icon-chevron-right{
+  border: none;
+  background: #FFF;
 }

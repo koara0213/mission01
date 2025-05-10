@@ -254,8 +254,8 @@
 .footer__nav-row {
   display: flex;
   align-items: flex-start;
-  gap: 0.8vw;
-  margin-bottom: 0.9vw;
+  gap: 1.1vw;
+  margin-bottom: 0.3vw;
 }
 
 .footer__nav-cell-icon {
@@ -271,7 +271,7 @@
 }
 
 .down {
-  margin-top: 1.6vw;
+  margin-top: 1vw;
   margin-bottom: 0.3vw;
 }
 
@@ -298,6 +298,27 @@
 .footer__nav-grid.bottom .footer__nav-block{
   flex: unset;
   margin-right: 3.7vw;
+}
+
+/* 疑似要素置き場
+----------------- */
+.footer__nav-cell-icon {
+  font-family: "bootstrap-icons";
+  font-style: normal;
+  font-weight: normal;
+  display: inline-block;
+  font-size: 0.9rem;
+  color: #fff;
+}
+
+/* ◆ の代替として diamond-fill アイコン */
+.icon-diamond::before {
+  content: "\F2EF"; /* bi-gem または bi-caret-right-fill も代用可 */
+}
+
+/* ＞ の代替として chevron-right */
+.icon-chevron-right::before {
+  content: "\f285"; /* bi-chevron-right */
 }
 
 /* コピーライト */

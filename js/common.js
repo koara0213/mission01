@@ -12,19 +12,35 @@ document.addEventListener('DOMContentLoaded', () => {
 
 /* ドロワーメニュー内「＋／ー」ボタン押下 → サブメニュー表示・非表示 */
 document.addEventListener('DOMContentLoaded', () => {
-  const toggles = document.querySelectorAll('.mv-header__nav-toggle');
+  const navItems = document.querySelectorAll('.mv-header__nav-item');
 
-  toggles.forEach(toggle => {
-    toggle.addEventListener('click', () => {
-      const submenu = toggle.closest('.mv-header__nav-item').querySelector('.mv-header__submenu');
-      submenu.classList.toggle('is-open');
+  navItems.forEach(item => {
+    item.addEventListener('click', (e) => {
+      const submenu = item.querySelector('.mv-header__submenu');
+      const toggle = item.querySelector('.mv-header__nav-toggle');
+      const icon = toggle.querySelector('i');
 
-      // 表示切替記号も一緒に
-      toggle.textContent = submenu.classList.contains('is-open') ? '－' : '＋';
-      toggle.setAttribute('aria-expanded', submenu.classList.contains('is-open'));
+      const isOpen = submenu.classList.toggle('is-open');
+
+      // アイコンクラス切り替え
+      if (icon) {
+        icon.classList.toggle('bi-plus-lg', !isOpen);
+        icon.classList.toggle('bi-dash-lg', isOpen);
+      }
+
+      // アクセシビリティ属性更新
+      toggle.setAttribute('aria-expanded', isOpen);
     });
   });
-});
+  
+    // 「＞」アイコン（サブリンク横ボタン）などのクリックは親に伝播させない
+    const toggleButtons = document.querySelectorAll('.mv-header__navsublabel .mv-header__nav-toggle');
+    toggleButtons.forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        e.stopPropagation(); 
+      });
+    }); 
+  });
 
 /* 事業内容
 --------------------- */
