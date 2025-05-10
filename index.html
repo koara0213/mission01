@@ -6,22 +6,18 @@
   <link rel="stylesheet" href="css/header.css" />
   <link rel="stylesheet" href="css/index.css" />
   <link rel="stylesheet" href="css/footer.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.css">
   <script src="js/common.js" defer></script>
 </head>
 <body>
-  <!-- ヘッダー メインビジュアル -->
   <header class="mv-header">
     <div class="mv-header__wrapper">
-      <!-- ヘッダーロゴ -->
       <div class="mv-header__logo">
         <a href="/">
           <img src="images/logo.png" alt="">
         </a>
       </div>
-      <!-- ハンバーガーボタン -->
       <div class="mv-header__hamburger">
         <button class="mv-header__hamburger-button" aria-label="メニューを開く">
           <span class="mv-header__hamburger-line"></span>
@@ -31,7 +27,6 @@
       </div>
     </div>
     
-    <!-- ドロワーメニュー -->
     <nav class="mv-header__drawer mv-header__wrapper">
       <ul class="mv-header__nav">
         <li class="mv-header__nav-item item1">
@@ -128,75 +123,67 @@
     
   </header>
   
-    <!-- 事業内容 -->
-    <div class="business">
-      <!-- 帯 -->
-      <div class="slideband">
-        <div class="slideband__line">
-          <span class="slideband__line--gray"></span>
-          <span class="slideband__line--pink"></span>
-        </div>
-         <div class="slideband__inner fadeinLefttoRight">
-          <div class="slideband__content">
-            <h2 class="slideband__title">賃貸＆販売 事業</h2>
-          </div>  
-         </div>
+  <div class="business">
+    <div class="slideband">
+      <div class="slideband__line">
+        <span class="slideband__line--gray"></span>
+        <span class="slideband__line--pink"></span>
+      </div>
+      <div class="slideband__inner fadeinLefttoRight">
+        <div class="slideband__content">
+          <h2 class="slideband__title">賃貸＆販売 事業</h2>
+        </div>  
+      </div>
+    </div>
+
+    <div class="business__inner">
+      <div class="business__title">
+        <span class="business__title-line"></span>
+        <h2 class="business__title-main">Business content</h2>
+        <p class="business__title-sub">事業内容</p>
       </div>
 
-      <!-- コンテンツタイトル -->
-      <div class="business__inner">
-        <div class="business__title">
-          <span class="business__title-line"></span>
-          <h2 class="business__title-main">Business content</h2>
-          <p class="business__title-sub">事業内容</p>
+      <div class="imgrow">
+        <div class="imgbox imgbox--home js-clickbox">
+          <div class="imgbox__bg imgbox__bg--home"></div>
+          <div class="imgbox__overlay"></div>
+          <div class="imgbox__content">
+            <p class="imgbox__title">借りたい</p>
+            <img src="images/icon_home.png" alt="" class="imgbox__icon">
+            <p class="imgbox__caption">住居/お部屋探し<br>賃貸</p>
+          </div>
         </div>
 
-        <!-- カラム3つ　-->
-        <div class="imgrow">
-          <div class="imgbox imgbox--home js-clickbox">
-            <div class="imgbox__bg imgbox__bg--home"></div>
-            <div class="imgbox__overlay"></div>
-            <div class="imgbox__content">
-              <p class="imgbox__title">借りたい</p>
-              <img src="images/icon_home.png" alt="" class="imgbox__icon">
-              <p class="imgbox__caption">住居/お部屋探し<br>賃貸</p>
-            </div>
+        <div class="imgbox imgbox--store js-clickbox">
+          <div class="imgbox__bg imgbox__bg--store"></div>
+          <div class="imgbox__overlay"></div>
+          <div class="imgbox__content">
+            <p class="imgbox__title">借りたい</p>
+            <img src="images/icon_store.png" alt="" class="imgbox__icon">
+            <p class="imgbox__caption">店舗＆事務所<br>賃貸</p>
           </div>
+        </div>
 
-          <div class="imgbox imgbox--store js-clickbox">
-            <div class="imgbox__bg imgbox__bg--store"></div>
-            <div class="imgbox__overlay"></div>
-            <div class="imgbox__content">
-              <p class="imgbox__title">借りたい</p>
-              <img src="images/icon_store.png" alt="" class="imgbox__icon">
-              <p class="imgbox__caption">店舗＆事務所<br>賃貸</p>
-            </div>
+        <div class="imgbox imgbox--estate js-clickbox">
+          <div class="imgbox__bg imgbox__bg--estate"></div>
+          <div class="imgbox__overlay"></div>
+          <div class="imgbox__content">
+            <p class="imgbox__title">売りたい<br>買いたい</p>
+            <img src="images/icon_estate.png" alt="" class="imgbox__icon">
+            <p class="imgbox__caption">不動産物件<br>売買</p>
           </div>
-
-          <div class="imgbox imgbox--estate js-clickbox">
-            <div class="imgbox__bg imgbox__bg--estate"></div>
-            <div class="imgbox__overlay"></div>
-            <div class="imgbox__content">
-              <p class="imgbox__title">売りたい<br>買いたい</p>
-              <img src="images/icon_estate.png" alt="" class="imgbox__icon">
-              <p class="imgbox__caption">不動産物件<br>売買</p>
-            </div>
-          </div>
+        </div>
       </div>
     </div>
   </div>
 
-    <!-- サービス事業 -->
-    <div class="service">
-      <div class="serviceband">
-        <div class="serviceband__line">
-          <span class="serviceband__line--pink"></span>
-          <span class="serviceband__line--gray"></span>
-        </div>
-        <!-- スライドする帯 -->
-        <div class="serviceband__inner fadeinRighttoLeft">
-
-        <!-- 通常フローで表示されるテキスト -->
+  <div class="service">
+    <div class="serviceband">
+      <div class="serviceband__line">
+        <span class="serviceband__line--pink"></span>
+        <span class="serviceband__line--gray"></span>
+      </div>
+      <div class="serviceband__inner fadeinRighttoLeft">
         <div class="serviceband__content">
           <h2 class="serviceband__title">サービス事業</h2>
           <h3 class="serviceband__subtitle">【管理サービス】</h3>
@@ -208,24 +195,19 @@
           </p>
         </div>
       </div>
-      </div>
-      <div class="service__inner">
-        <img src="images/tools.png" alt="">
-      </div>
     </div>
+    <div class="service__inner">
+      <img src="images/tools.png" alt="">
+    </div>
+  </div>
 
-    <!-- 開発事業 -->
-    <div class="development">
-
-      <div class="servicebandDev">
-        <div class="slidebandDev__line">
-          <span class="slidebandDev__line--gray"></span>
-          <span class="slidebandDev__line--pink"></span>
-        </div>
-        <!-- スライドする帯 -->
-        <div class="servicebandDev__inner fadeinLefttoRight">
-
-        <!-- 通常フローで表示されるテキスト -->
+  <div class="development">
+    <div class="servicebandDev">
+      <div class="slidebandDev__line">
+        <span class="slidebandDev__line--gray"></span>
+        <span class="slidebandDev__line--pink"></span>
+      </div>
+      <div class="servicebandDev__inner fadeinLefttoRight">
         <div class="servicebandDev__content">
           <h2 class="servicebandDev__title">開発事業</h2>
           <p class="servicebandDev__text">
@@ -234,17 +216,14 @@
           </p>
         </div>
       </div>
-      </div>
-      <div class="serviceDev__inner">
-        <img src="images/Aque.png" alt="">
-      </div>
-
     </div>
-    
-  <!-- 会社概要 -->
+    <div class="serviceDev__inner">
+      <img src="images/Aque.png" alt="">
+    </div>
+  </div>
+  
   <div class="information">
     <div class="information__inner">
-
       <div class="information__heading">
         <span class="information__heading-line"></span>
         <h2 class="information__heading-title">Information</h2>
@@ -272,11 +251,9 @@
     </div>
   </div>
 
-  <!-- フッター -->
   <footer>
   <div class="footer">
     <div class="footer__inner__top">
-      <!-- インスタ & チャンネル ボタン -->
       <div class="footer__sns-buttons">
         <div class="sns-button footer__sns-button__insta">
           <a href="javascript:void(0)" class="sns-button--pink">
@@ -293,7 +270,6 @@
       </div>
     </div>
     <div class="footer__inner__bottom">
-      <!-- 店舗情報 -->
       <div class="footer__shops">
         <div class="footer__shop__infoLeft">
           <div class="footer__shop">
@@ -348,7 +324,6 @@
         </div>
       </div>
       <div class="footer__nav-grid">
-        <!-- 賃貸＆売買事業 -->
         <div class="footer__nav-block">
           <div class="footer__nav-row"><div class="footer__nav-cell-icon icon-diamond"></div><div class="footer__nav-cell-title">賃貸＆売買事業</div></div>
           <div class="footer__nav-row"><div class="footer__nav-cell-icon icon-chevron-right"></div><div class="footer__nav-cell"><a href="javascript:void(0)">賃貸住居(お部屋探し)</a></div></div>
@@ -356,7 +331,6 @@
           <div class="footer__nav-row"><div class="footer__nav-cell-icon icon-chevron-right"></div><div class="footer__nav-cell"><a href="javascript:void(0)">売買 不動産物件</a></div></div>
         </div>
       
-        <!-- サービス事業 -->
         <div class="footer__nav-block">
           <div class="footer__nav-row"><div class="footer__nav-cell-icon icon-diamond"></div><div class="footer__nav-cell-title">サービス事業</div></div>
           <div class="footer__nav-row"><div class="footer__nav-cell-icon icon-chevron-right"></div><div class="footer__nav-cell"><a href="javascript:void(0)">賃貸管理について</a></div></div>
@@ -365,7 +339,6 @@
           <div class="footer__nav-row"><div class="footer__nav-cell-icon icon-chevron-right"></div><div class="footer__nav-cell"><a href="javascript:void(0)">リノベーション</a></div></div>
         </div>
       
-        <!-- 開発事業 -->
         <div class="footer__nav-block">
           <div class="footer__nav-row"><div class="footer__nav-cell-icon icon-diamond"></div><div class="footer__nav-cell-title">開発事業</div></div>
           <div class="footer__nav-row"><div class="footer__nav-cell-icon icon-chevron-right"></div><div class="footer__nav-cell"><a href="javascript:void(0)">AQUEシリーズ</a></div></div>
@@ -373,7 +346,6 @@
           <div class="footer__nav-row"><div class="footer__nav-cell-icon icon-chevron-right"></div><div class="footer__nav-cell"><a href="javascript:void(0)">貸したい、売りたい</a></div></div>
         </div>
       
-        <!-- EXTRA -->
         <div class="footer__nav-block">
           <div class="footer__nav-row"><div class="footer__nav-cell-icon icon-diamond"></div><div class="footer__nav-cell-title">EXTRA</div></div>
           <div class="footer__nav-row"><div class="footer__nav-cell-icon icon-chevron-right"></div><div class="footer__nav-cell"><a href="javascript:void(0)">物件カタログ</a></div></div>
@@ -383,14 +355,12 @@
         </div>
       </div>
       <div class="footer__nav-grid bottom">
-        <!-- 企業情報 -->
         <div class="footer__nav-block">
           <div class="footer__nav-row"><div class="footer__nav-cell-icon icon-diamond"></div><div class="footer__nav-cell-title">企業情報</div></div>
           <div class="footer__nav-row"><div class="footer__nav-cell-icon icon-chevron-right"></div><div class="footer__nav-cell"><a href="javascript:void(0)">会社概要</a></div></div>
           <div class="footer__nav-row"><div class="footer__nav-cell-icon icon-chevron-right"></div><div class="footer__nav-cell"><a href="javascript:void(0)">ランドハートの想い</a></div></div>
         </div>
       
-        <!-- お問い合わせ -->
         <div class="footer__nav-block">
           <div class="footer__nav-row"><div class="footer__nav-cell-icon icon-diamond"></div><div class="footer__nav-cell-title">お問い合わせ</div></div>
           <div class="footer__nav-row"><div class="footer__nav-cell-icon icon-chevron-right"></div><div class="footer__nav-cell"><a href="javascript:void(0)">お問い合わせ</a></div></div>
@@ -398,7 +368,6 @@
           <div class="footer__nav-row"><div class="footer__nav-cell-icon icon-chevron-right"></div><div class="footer__nav-cell"><a href="javascript:void(0)">利用規約</a></div></div>
         </div>
       </div>
-      <!-- コピーライト -->
       <p class="footer__copyright">
         Copyright(c) landheart All Rights Reserved.
       </p>

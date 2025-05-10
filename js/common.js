@@ -1,6 +1,3 @@
-/* ヘッダーメニュー
---------------------- */
-/* ハンバーガーボタン押下 → ドロワーメニュー表示・非表示 */
 document.addEventListener('DOMContentLoaded', () => {
   const hamburger = document.querySelector('.mv-header__hamburger-button');
   const header = document.querySelector('.mv-header');
@@ -10,7 +7,6 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
-/* ドロワーメニュー内「＋／ー」ボタン押下 → サブメニュー表示・非表示 */
 document.addEventListener('DOMContentLoaded', () => {
   const navItems = document.querySelectorAll('.mv-header__nav-item');
 
@@ -22,58 +18,50 @@ document.addEventListener('DOMContentLoaded', () => {
 
       const isOpen = submenu.classList.toggle('is-open');
 
-      // アイコンクラス切り替え
       if (icon) {
         icon.classList.toggle('bi-plus-lg', !isOpen);
         icon.classList.toggle('bi-dash-lg', isOpen);
       }
 
-      // アクセシビリティ属性更新
       toggle.setAttribute('aria-expanded', isOpen);
     });
   });
-  
-    // 「＞」アイコン（サブリンク横ボタン）などのクリックは親に伝播させない
-    const toggleButtons = document.querySelectorAll('.mv-header__navsublabel .mv-header__nav-toggle');
-    toggleButtons.forEach(btn => {
-      btn.addEventListener('click', (e) => {
-        e.stopPropagation(); 
-      });
-    }); 
-  });
 
-/* 事業内容
---------------------- */
-// 帯のスライドイン //
+  const toggleButtons = document.querySelectorAll('.mv-header__navsublabel .mv-header__nav-toggle');
+  toggleButtons.forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      e.stopPropagation(); 
+    });
+  }); 
+});
+
 const fadeElemsDevelop = document.querySelectorAll('.fadeinLefttoRight');
 
 const observerDevelop = new IntersectionObserver(entriesDevelop => {
   entriesDevelop.forEach(entry => {
     if (entry.isIntersecting) {
       entry.target.classList.add('show');
-      observerDevelop.unobserve(entry.target); // 一度だけ実行
+      observerDevelop.unobserve(entry.target);
     }
   });
 }, {
-  threshold: 0.1 // 10%見えたらトリガー
+  threshold: 0.1
 });
 
 fadeElemsDevelop.forEach(el => {
   observerDevelop.observe(el);
 });
 
-// 3カラムを順番に下からスライドイン //
 document.addEventListener('DOMContentLoaded', () => {
   const boxes = document.querySelectorAll('.imgbox');
 
   const observer = new IntersectionObserver((entries, observer) => {
     entries.forEach((entry, index) => {
       if (entry.isIntersecting) {
-        // 順番にアニメーション
         setTimeout(() => {
           entry.target.classList.add('slide-in');
-        }, index * 300); // 各要素に300msの遅延
-        observer.unobserve(entry.target); // 一度だけ実行
+        }, index * 300);
+        observer.unobserve(entry.target);
       }
     });
   }, {
@@ -89,24 +77,20 @@ document.querySelectorAll('.js-clickbox').forEach(function (box) {
   box.style.cursor = 'pointer';
   box.addEventListener('click', function () {
     window.location.href = 'javascript:void(0)';
-    // 実運用ではリンク先URLを入れる
   });
 });
 
-
-/* サービス事業
---------------------- */
 const fadeElemsService = document.querySelectorAll('.fadeinRighttoLeft');
 
 const observerService = new IntersectionObserver(entriesService => {
   entriesService.forEach(entry => {
     if (entry.isIntersecting) {
       entry.target.classList.add('show');
-      observerService.unobserve(entry.target); // 一度だけ実行
+      observerService.unobserve(entry.target);
     }
   });
 }, {
-  threshold: 0.1 // 10%見えたらトリガー
+  threshold: 0.1
 });
 
 fadeElemsService.forEach(el => {
