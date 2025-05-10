@@ -1,5 +1,8 @@
 /* Slidband styles
 ------------------------------------------ */
+#contents {
+  width: 100%;
+}
 
 .business {
   position: relative;
