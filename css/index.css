@@ -124,21 +124,22 @@
   height: 4.5vw;
   color: #fff;
   text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
-  margin: 5.5vw 0vw 5.4vw 0vw;
+  margin: 5.5vw 0vw 2.3vw 0vw;
 }
 
 .imgbox--store>.imgbox__content>.imgbox__title {
-  margin: 5.6vw 0vw 5.1vw 0vw;
+  margin: 5.6vw 0vw 1.9vw 0vw;
 }
 
 .imgbox--estate>.imgbox__content>.imgbox__title {
-  margin: 4.9vw 0.3vw 5.8vw 0vw;
+  margin: 4.9vw 0.3vw 2.6vw 0vw;
   line-height: 44.7px;
 }
 
 .imgbox__icon {
   width: 40px;
   height: auto;
+  margin-top:   3vw;
 }
 
 .imgbox--estate>.imgbox__content>.imgbox__icon {
@@ -209,9 +210,11 @@
 }
 
 .slideband__title{
-  padding: 1.8vw 1vw 2vw 22.9vw;
+  padding: 1.8vw 4.2vw 2vw 14.9vw;
   font-size: 25px;
   letter-spacing: 1.5px;
+  display: flex;
+  justify-self: end;
 }
 
 .slideband__line {
@@ -406,6 +409,8 @@
 .servicebandDev__content {
   color: #ffffff;
   font-family: 'Noto Sans JP', sans-serif;
+  justify-self: end;
+  padding: 0vw 5.5vw 0vw 0vw;
 }
 
 .servicebandDev__title {
