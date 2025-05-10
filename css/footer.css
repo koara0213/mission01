@@ -1,4 +1,3 @@
-/* フッター全体 */
 .footer {
   background: url("../images/entrance.png");
   background-repeat: no-repeat;
@@ -23,12 +22,12 @@
   max-width: 340px;
 }
 
-.footer__sns-button__insta span{
+.footer__sns-button__insta span {
   padding: 0vw 1.2vw 0vw 0.1vw;
   font-size: 19px;
 }
 
-.footer__sns-button__white span{
+.footer__sns-button__white span {
   padding: 0vw 0.6vw 0vw 0.6vw;
   font-size: 18px;
 }
@@ -41,9 +40,8 @@
   font-weight: bold;
   font-size: 14px;
   text-decoration: none;
-  /* gap: 10px; */
   position: relative;
-  border-radius: 0; /* ✅ 角丸なし */
+  border-radius: 0;
 }
 
 .footer__sns-button__insta a::after {
@@ -52,7 +50,7 @@
   width: 50px;
   height: 1px;
   margin-left: 10px;
-  background-color: currentColor; /* ✅ テキストと同じ色で自動切替 */
+  background-color: currentColor;
 }
 
 .footer__sns-button__white a::after {
@@ -60,10 +58,10 @@
   display: block;
   width: 39px;
   height: 1px;
-  background-color: currentColor; /* ✅ テキストと同じ色で自動切替 */
+  background-color: currentColor;
 }
 
-.footer__sns-buttons img{
+.footer__sns-buttons img {
   width: 9%;
 }
 
@@ -78,55 +76,47 @@
   border: 1px solid #ccc;
 }
 
-/*----*/
 .tab-buttons {
   display: flex;
-      justify-content: space-between;
-      margin-bottom: 65px;
-      /* width: 100%; */
-      padding: 3px 206px;
-      gap: 31px;
-      /* margin: 30px 0px; */
+  justify-content: space-between;
+  margin-bottom: 65px;
+  padding: 3px 206px;
+  gap: 31px;
 }
 
 .tab-button {
-    flex: 1;
-    /* margin: 2vw 3vw; */
-    background-color: #f0f0f0;
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    text-align: center;
-    box-sizing: border-box;
-    padding: 22px 0px;
+  flex: 1;
+  background-color: #f0f0f0;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 22px 0px;
 }
 
-/* 内部コンテンツ top */
-/* snsボタン */
 .footer__inner__top {
   max-width: 72vw;
   margin: 0vw 22vw;
-  padding:12.1vw 0vw 0vw 0vw;
+  padding: 12.1vw 0vw 0vw 0vw;
   flex-direction: column;
   gap: 3vw;
 }
 
-/* 内部コンテンツ bottom */
 .footer__inner__bottom {
   width: 100%;
   flex-direction: column;
   gap: 3vw;
   background: linear-gradient(
     to bottom,
-      rgba(0, 0, 0, 0.3) 10%, 
-      rgba(0, 0, 0, 0.3) 25%, 
-      rgba(0, 0, 0, 0.95) 70%
-    );
+    rgba(0, 0, 0, 0.3) 10%,
+    rgba(0, 0, 0, 0.3) 25%,
+    rgba(0, 0, 0, 0.95) 70%
+  );
   padding: 0px 0;
   box-sizing: border-box;
 }
 
-/* 店舗情報ブロック */
 .footer__shops {
   max-width: 72vw;
   display: flex;
@@ -137,15 +127,15 @@
   margin: 0vw 22vw;
 }
 
-.footer__shop__infoLeft{
+.footer__shop__infoLeft {
   padding: 1.3vw 0vw;
 }
 
-.footer__title{
+.footer__title {
   width: 5.8vw;
 }
 
-.footer__address{
+.footer__address {
   margin: unset;
   padding: unset;
   padding-bottom: 0.2vw;
@@ -161,8 +151,7 @@
   padding-bottom: 1vw;
 }
 
-/* 営業時間・定休日ブロック */
-.footer__shop__infoRight{
+.footer__shop__infoRight {
   display: grid;
   flex: 1 1 22vw;
   place-self: start;
@@ -172,7 +161,7 @@
   padding-bottom: 0.9vw;
 }
 
-.footer__hours--top{
+.footer__hours--top {
   display: flex;
   min-width: 20vw;
   line-height: 1.6;
@@ -180,18 +169,18 @@
   padding-left: 5.9vw;
 }
 
-.footer__shop__title{
+.footer__shop__title {
   margin: 1.2vw 0vw 0vw 0vw;
   padding: unset;
 }
 
-.footer__shop__times{
+.footer__shop__times {
   margin: 1.2vw 0vw 0vw 0vw;
   padding: unset;
   letter-spacing: 1.5px;
 }
 
-.footer__hours--bottom{
+.footer__hours--bottom {
   display: flex;
   min-width: 20vw;
   line-height: 1.6;
@@ -200,15 +189,14 @@
   padding-top: 1vw;
 }
 
-.footer__hours--top .footer__shop__title{
+.footer__hours--top .footer__shop__title {
   padding-right: 1.2vw;
 }
 
-.footer__hours--bottom .footer__shop__title{
+.footer__hours--bottom .footer__shop__title {
   padding-right: 2.7vw;
 }
 
-/* ナビゲーション */
 .footer__nav-table {
   display: flex;
   flex-direction: column;
@@ -242,13 +230,11 @@
 .footer__nav-grid {
   display: flex;
   flex-wrap: wrap;
-  /* gap: 3vw; */
   margin: 1.5vw 23.2vw 1.9vw 22.4vw;
 }
 
 .footer__nav-block {
   flex: 1 1 13.5vw;
-  /* min-width: 16vw; */
 }
 
 .footer__nav-row {
@@ -289,19 +275,17 @@
   text-decoration: underline;
 }
 
-.footer__nav-grid.bottom{
+.footer__nav-grid.bottom {
   display: flex;
   justify-content: flex-start;
   flex: unset;
 }
 
-.footer__nav-grid.bottom .footer__nav-block{
+.footer__nav-grid.bottom .footer__nav-block {
   flex: unset;
   margin-right: 3.7vw;
 }
 
-/* 疑似要素置き場
------------------ */
 .footer__nav-cell-icon {
   font-family: "bootstrap-icons";
   font-style: normal;
@@ -311,17 +295,14 @@
   color: #fff;
 }
 
-/* ◆ の代替として diamond-fill アイコン */
 .icon-diamond::before {
-  content: "\F2EF"; /* bi-gem または bi-caret-right-fill も代用可 */
+  content: "\F2EF";
 }
 
-/* ＞ の代替として chevron-right */
 .icon-chevron-right::before {
-  content: "\f285"; /* bi-chevron-right */
+  content: "\f285";
 }
 
-/* コピーライト */
 .footer__copyright {
   text-align: center;
   font-size: 0.7vw;

@@ -1,0 +1,330 @@
+/* フッター全体 */
+.footer {
+  background: url("../images/entrance.png");
+  background-repeat: no-repeat;
+  background-color: #000;
+  background-size: 100% auto;
+  color: #fff;
+  font-size: 0.9vw;
+  width: 100vw;
+  box-sizing: border-box;
+  margin-top: 2.1vw;
+}
+
+.footer__sns-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 65px;
+}
+
+.sns-button {
+  flex: 1;
+  max-width: 340px;
+}
+
+.footer__sns-button__insta span{
+  padding: 0vw 1.2vw 0vw 0.1vw;
+  font-size: 19px;
+}
+
+.footer__sns-button__white span{
+  padding: 0vw 0.6vw 0vw 0.6vw;
+  font-size: 18px;
+}
+
+.sns-button a {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 18px 0px 18px 0px;
+  font-weight: bold;
+  font-size: 14px;
+  text-decoration: none;
+  /* gap: 10px; */
+  position: relative;
+  border-radius: 0; /* ✅ 角丸なし */
+}
+
+.footer__sns-button__insta a::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 1px;
+  margin-left: 10px;
+  background-color: currentColor; /* ✅ テキストと同じ色で自動切替 */
+}
+
+.footer__sns-button__white a::after {
+  content: "";
+  display: block;
+  width: 39px;
+  height: 1px;
+  background-color: currentColor; /* ✅ テキストと同じ色で自動切替 */
+}
+
+.footer__sns-buttons img{
+  width: 9%;
+}
+
+.sns-button--pink {
+  background-color: #e91e63;
+  color: #fff;
+}
+
+.sns-button--white {
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #ccc;
+}
+
+/*----*/
+.tab-buttons {
+  display: flex;
+      justify-content: space-between;
+      margin-bottom: 65px;
+      /* width: 100%; */
+      padding: 3px 206px;
+      gap: 31px;
+      /* margin: 30px 0px; */
+}
+
+.tab-button {
+    flex: 1;
+    /* margin: 2vw 3vw; */
+    background-color: #f0f0f0;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 22px 0px;
+}
+
+/* 内部コンテンツ top */
+/* snsボタン */
+.footer__inner__top {
+  max-width: 72vw;
+  margin: 0vw 22vw;
+  padding:12.1vw 0vw 0vw 0vw;
+  flex-direction: column;
+  gap: 3vw;
+}
+
+/* 内部コンテンツ bottom */
+.footer__inner__bottom {
+  width: 100%;
+  flex-direction: column;
+  gap: 3vw;
+  background: linear-gradient(
+    to bottom,
+      rgba(0, 0, 0, 0.3) 10%, 
+      rgba(0, 0, 0, 0.3) 25%, 
+      rgba(0, 0, 0, 0.95) 70%
+    );
+  padding: 0px 0;
+  box-sizing: border-box;
+}
+
+/* 店舗情報ブロック */
+.footer__shops {
+  max-width: 72vw;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2vw;
+  justify-content: space-between;
+  padding: 0.4vw 0vw 0.2vw 0.4vw;
+  margin: 0vw 22vw;
+}
+
+.footer__shop__infoLeft{
+  padding: 1.3vw 0vw;
+}
+
+.footer__title{
+  width: 5.8vw;
+}
+
+.footer__address{
+  margin: unset;
+  padding: unset;
+  padding-bottom: 0.2vw;
+}
+
+.footer__shop,
+.footer__hours {
+  display: flex;
+  flex: 1 1 22vw;
+  min-width: 20vw;
+  line-height: 1.5;
+  font-size: 0.9vw;
+  padding-bottom: 1vw;
+}
+
+/* 営業時間・定休日ブロック */
+.footer__shop__infoRight{
+  display: grid;
+  flex: 1 1 22vw;
+  place-self: start;
+  min-width: 20vw;
+  line-height: 1.6;
+  font-size: 0.9vw;
+  padding-bottom: 0.9vw;
+}
+
+.footer__hours--top{
+  display: flex;
+  min-width: 20vw;
+  line-height: 1.6;
+  font-size: 0.9vw;
+  padding-left: 5.9vw;
+}
+
+.footer__shop__title{
+  margin: 1.2vw 0vw 0vw 0vw;
+  padding: unset;
+}
+
+.footer__shop__times{
+  margin: 1.2vw 0vw 0vw 0vw;
+  padding: unset;
+  letter-spacing: 1.5px;
+}
+
+.footer__hours--bottom{
+  display: flex;
+  min-width: 20vw;
+  line-height: 1.6;
+  font-size: 0.9vw;
+  padding-left: 5.9vw;
+  padding-top: 1vw;
+}
+
+.footer__hours--top .footer__shop__title{
+  padding-right: 1.2vw;
+}
+
+.footer__hours--bottom .footer__shop__title{
+  padding-right: 2.7vw;
+}
+
+/* ナビゲーション */
+.footer__nav-table {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4vw;
+  margin: 0vw 22vw;
+  font-size: 0.95vw;
+}
+
+.footer__nav-cell-icon {
+  width: 1.5vw;
+  min-width: 1.5vw;
+  color: #fff;
+  text-align: right;
+  font-weight: bold;
+}
+
+.footer__nav-cell-title {
+  font-weight: bold;
+  margin-bottom: 0.4vw;
+}
+
+.footer__nav-cell a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer__nav-cell a:hover {
+  text-decoration: underline;
+}
+
+.footer__nav-grid {
+  display: flex;
+  flex-wrap: wrap;
+  /* gap: 3vw; */
+  margin: 1.5vw 23.2vw 1.9vw 22.4vw;
+}
+
+.footer__nav-block {
+  flex: 1 1 13.5vw;
+  /* min-width: 16vw; */
+}
+
+.footer__nav-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.1vw;
+  margin-bottom: 0.3vw;
+}
+
+.footer__nav-cell-icon {
+  width: 1.5vw;
+  min-width: 1.5vw;
+  color: #fff;
+  font-weight: bold;
+  text-align: right;
+}
+
+.arrow {
+  font-size: 15px;
+}
+
+.down {
+  margin-top: 1vw;
+  margin-bottom: 0.3vw;
+}
+
+.footer__nav-cell-title {
+  font-weight: bold;
+  color: #fff;
+}
+
+.footer__nav-cell a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer__nav-cell a:hover {
+  text-decoration: underline;
+}
+
+.footer__nav-grid.bottom{
+  display: flex;
+  justify-content: flex-start;
+  flex: unset;
+}
+
+.footer__nav-grid.bottom .footer__nav-block{
+  flex: unset;
+  margin-right: 3.7vw;
+}
+
+/* 疑似要素置き場
+----------------- */
+.footer__nav-cell-icon {
+  font-family: "bootstrap-icons";
+  font-style: normal;
+  font-weight: normal;
+  display: inline-block;
+  font-size: 0.9rem;
+  color: #fff;
+}
+
+/* ◆ の代替として diamond-fill アイコン */
+.icon-diamond::before {
+  content: "\F2EF"; /* bi-gem または bi-caret-right-fill も代用可 */
+}
+
+/* ＞ の代替として chevron-right */
+.icon-chevron-right::before {
+  content: "\f285"; /* bi-chevron-right */
+}
+
+/* コピーライト */
+.footer__copyright {
+  text-align: center;
+  font-size: 0.7vw;
+  margin-top: 2.2vw;
+  margin-bottom: 0vw;
+}
