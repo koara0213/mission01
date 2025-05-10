@@ -38,3 +38,11 @@ document.addEventListener('DOMContentLoaded', () => {
     observer.observe(box);
   });
 });
+
+document.querySelectorAll('.js-clickbox').forEach(function (box) {
+  box.style.cursor = 'pointer';
+  box.addEventListener('click', function () {
+    window.location.href = 'javascript:void(0)';
+    // 実運用ではリンク先URLを入れる
+  });
+});

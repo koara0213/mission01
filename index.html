@@ -6,22 +6,25 @@
 
   <!-- 納品時削除 -->
   <link rel="stylesheet" href="css/reset.css" />
-  <link rel="stylesheet" href="css/01_header_top.css" />
+  <!-- <link rel="stylesheet" href="css/01_header_top.css" /> -->
   <link rel="stylesheet" href="css/slideband.css" />
   <link rel="stylesheet" href="css/service.css" />
   <link rel="stylesheet" href="css/development.css" />
-   
+  <link rel="stylesheet" href="css/infomation.css" />
+  
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+
   <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js" defer></script> -->
   <script src="js/01_header_top.js" defer></script>
   <script src="js/slideband.js" defer></script>
   <script src="js/service.js" defer></script>
-  <script src="js/development.js" defer></script>
+  <!-- <script src="js/development.js" defer></script> -->
   <script src="js/common.js" defer></script>
   <!-- -->
 
   <link rel="stylesheet" href="css/header.css" />
   <link rel="stylesheet" href="css/footer.css" />
-  <link rel="stylesheet" href="css/top.css" />
+  <link rel="stylesheet" href="css/index.css" />
 </head>
 <body>
   <!-- ヘッダー メインビジュアル -->
@@ -53,11 +56,11 @@
           </div>
           <ul class="mv-header__submenu">
             <div class="mv-header__navsublabel">
-              <li><a href="#">会社概要</a></li>
+              <li><a href="javascript:void(0)">会社概要</a></li>
               <button class="mv-header__nav-toggle" aria-expanded="false">＞</button>
             </div>
             <div class="mv-header__navsublabel">
-              <li><a href="#">ランドハートの想い</a></li>
+              <li><a href="javascript:void(0)">ランドハートの想い</a></li>
               <button class="mv-header__nav-toggle" aria-expanded="false">＞</button>
             </div>
           </ul>
@@ -70,11 +73,11 @@
           </div>
           <ul class="mv-header__submenu">
             <div class="mv-header__navsublabel">
-              <li><a href="#">賃貸</a></li>
+              <li><a href="javascript:void(0)">賃貸</a></li>
               <button class="mv-header__nav-toggle" aria-expanded="false">＞</button>
             </div>
             <div class="mv-header__navsublabel">
-              <li><a href="#">売買</a></li>
+              <li><a href="javascript:void(0)">売買</a></li>
               <button class="mv-header__nav-toggle" aria-expanded="false">＞</button>
             </div>
           </ul>
@@ -86,11 +89,11 @@
           </div>
           <ul class="mv-header__submenu">
             <div class="mv-header__navsublabel">
-              <li><a href="#">sample1</a></li>
+              <li><a href="javascript:void(0)">×××××××</a></li>
               <button class="mv-header__nav-toggle" aria-expanded="false">＞</button>
             </div>
             <div class="mv-header__navsublabel">
-              <li><a href="#">sample2</a></li>
+              <li><a href="javascript:void(0)">×××××××</a></li>
               <button class="mv-header__nav-toggle" aria-expanded="false">＞</button>
             </div>
           </ul>
@@ -102,11 +105,11 @@
           </div>
           <ul class="mv-header__submenu">
             <div class="mv-header__navsublabel">
-              <li><a href="#">sample1</a></li>
+              <li><a href="javascript:void(0)">×××××××</a></li>
               <button class="mv-header__nav-toggle" aria-expanded="false">＞</button>
             </div>
             <div class="mv-header__navsublabel">
-              <li><a href="#">sample2</a></li>
+              <li><a href="javascript:void(0)">×××××××</a></li>
               <button class="mv-header__nav-toggle" aria-expanded="false">＞</button>
             </div>
           </ul>
@@ -118,17 +121,17 @@
           </div>
           <ul class="mv-header__submenu">
             <div class="mv-header__navsublabel">
-              <li><a href="#">sample1</a></li>
+              <li><a href="javascript:void(0)">×××××××</a></li>
               <button class="mv-header__nav-toggle" aria-expanded="false">＞</button>
             </div>
             <div class="mv-header__navsublabel">
-              <li><a href="#">sample2</a></li>
+              <li><a href="javascript:void(0)">×××××××</a></li>
               <button class="mv-header__nav-toggle" aria-expanded="false">＞</button>
             </div>
           </ul>
         </li>
         <li class="mv-header__nav-item item6">
-          <a href="#">お問い合わせ</a>
+          <a href="javascript:void(0)">お問い合わせ</a>
         </li>
       </ul>
     </nav>
@@ -159,7 +162,7 @@
 
         <!-- カラム3つ　-->
         <div class="imgrow">
-          <div class="imgbox imgbox--home">
+          <div class="imgbox imgbox--home js-clickbox">
             <div class="imgbox__bg imgbox__bg--home"></div>
             <div class="imgbox__overlay"></div>
             <div class="imgbox__content">
@@ -169,7 +172,7 @@
             </div>
           </div>
 
-          <div class="imgbox imgbox--store">
+          <div class="imgbox imgbox--store js-clickbox">
             <div class="imgbox__bg imgbox__bg--store"></div>
             <div class="imgbox__overlay"></div>
             <div class="imgbox__content">
@@ -179,7 +182,7 @@
             </div>
           </div>
 
-          <div class="imgbox imgbox--estate">
+          <div class="imgbox imgbox--estate js-clickbox">
             <div class="imgbox__bg imgbox__bg--estate"></div>
             <div class="imgbox__overlay"></div>
             <div class="imgbox__content">
@@ -242,11 +245,42 @@
       </div>
       </div>
       <div class="serviceDev__inner">
-        <img src="images/Aque.png" alt="AQUE建物写真">
+        <img src="images/Aque.png" alt="">
       </div>
 
     </div>
     
+  <!-- 会社概要 -->
+  <div class="information">
+    <div class="information__inner">
+
+      <div class="information__heading">
+        <span class="information__heading-line"></span>
+        <h2 class="information__heading-title">Information</h2>
+        <p class="information__heading-sub">会社情報</p>
+      </div>
+
+      <div class="information__content">
+        <div class="information__image">
+          <img src="images/LH_building.png" alt="">
+        </div>
+        <div class="information__text">
+          <p class="information__text-paragraph">
+            誠に勝手ながら、下記の期間を夏季休業とさせていただきます。
+          </p>
+          <p class="information__text-paragraph">
+            <span class="information__location">本店　　2021年08月11日(水)〜2021年08月18日(水)</span><br>
+            <span class="information__location">千葉店　2021年08月13日(金)〜2021年08月15日(日)</span><br>
+            <span class="information__location">管理部　2021年08月13日(金)〜2021年08月15日(日)</span>
+          </p>
+          <p class="information__text-paragraph">
+            何卒ご了承いただきますよう、お願い申し上げます。
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- フッター -->
   <footer class="footer">
     <div class="footer__inner">
@@ -254,11 +288,11 @@
       <!-- インスタ & チャンネル ボタン -->
       <div class="footer__sns-buttons">
         <a href="#" class="sns-button sns-button--pink">
-          <img src="images/icon_insta.png" alt="Instagramアイコン" />
+          <img src="images/icon_insta.png" alt="" />
           <span>staffのインスタ</span>
         </a>
         <a href="#" class="sns-button sns-button--white">
-          <img src="images/icon_channel.png" alt="チャンネルアイコン" />
+          <img src="images/icon_channel.png" alt="" />
           <span>LANDHEARTちゃんねる</span>
         </a>
       </div>

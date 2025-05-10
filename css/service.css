@@ -4,6 +4,7 @@
 .service {
   position: relative;
   margin-top: 2.9vw;
+  height: 480px;
 }
 
 .serviceband {
